@@ -2,7 +2,13 @@
   <div>
     <h1>Production overview</h1>
     <p>This is a demo for Stranda Prolog</p>
-
+    <CCard>
+        <CCardBody>
+            <h5>Harvested fish: 65730 pcs </h5>
+            <h5>Harvest start date: 2020.01.17 05:30</h5>
+            
+        </CCardBody>
+    </CCard>
     <h3>Current harvesting speed</h3>
     <CWidgetProgress
     header="250 / 400"
@@ -24,7 +30,7 @@
                 <CRow>
                 <CCol sm="5">
                     <h4 id="traffic" class="card-title mb-0">Production overview</h4>
-                    <div class="small text-muted">Hourly production rate</div>
+                    <div class="small text-muted">Total harvest</div>
                 </CCol>
                 <CCol sm="7" class="d-none d-md-block">
                     <CButton color="primary" class="float-right">
@@ -49,23 +55,23 @@
             <CCardFooter>
                 <CRow class="text-center">
                 <CCol md sm="12" class="mb-sm-2 mb-0">
-                    <div class="text-muted">Visits</div>
-                    <strong>29.703 Users (40%)</strong>
+                    <div class="text-muted">Current harvesting speed</div>
+                    <strong>250 pr. min</strong>
                     <CProgress
                     class="progress-xs mt-2"
                     :precision="1"
                     color="success"
-                    :value="40"
+                    :value="62.5"
                     />
                 </CCol>
                 <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                    <div class="text-muted">Unique</div>
-                    <strong>24.093 Users (20%)</strong>
+                    <div class="text-muted">Median harvest speed</div>
+                    <strong>345</strong>
                     <CProgress
                     class="progress-xs mt-2"
                     :precision="1"
                     color="info"
-                    :value="20"
+                    :value="65"
                     />
                 </CCol>
                 <CCol md sm="12" class="mb-sm-2 mb-0">
@@ -89,8 +95,8 @@
                     />
                 </CCol>
                 <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                    <div class="text-muted">Bounce Rate</div>
-                    <strong>Average Rate (40.15%)</strong>
+                    <div class="text-muted">Total production</div>
+                    <strong>56.942 fish</strong>
                     <CProgress
                     class="progress-xs mt-2"
                     :precision="1"
@@ -104,13 +110,13 @@
 
 
     <!-- Total prod start -->
-    <CTab title="Hourly">
+    <CTab title="Pr. min">
         <CCard>
         <CCardBody>
             <CRow>
             <CCol sm="5">
                 <h4 id="traffic" class="card-title mb-0">Production overview</h4>
-                <div class="small text-muted">Hourly production rate</div>
+                <div class="small text-muted">Harvest pr. min</div>
             </CCol>
             <CCol sm="7" class="d-none d-md-block">
                 <CButton color="primary" class="float-right">
@@ -135,23 +141,23 @@
         <CCardFooter>
             <CRow class="text-center">
             <CCol md sm="12" class="mb-sm-2 mb-0">
-                <div class="text-muted">Visits</div>
-                <strong>29.703 Users (40%)</strong>
+                <div class="text-muted">Current harvesting speed</div>
+                <strong>250 pr. min</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="success"
-                :value="40"
+                :value="62.5"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
                 <div class="text-muted">Unique</div>
-                <strong>24.093 Users (20%)</strong>
+                <strong>Median harvest speed</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="info"
-                :value="20"
+                :value="62"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0">
@@ -175,8 +181,8 @@
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                <div class="text-muted">Bounce Rate</div>
-                <strong>Average Rate (40.15%)</strong>
+                <div class="text-muted">Total production</div>
+                <strong>56.942 fish</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
@@ -200,9 +206,13 @@
             <CRow>
             <CCol sm="5">
                 <h4 id="traffic" class="card-title mb-0">Helix 1 Overview</h4>
-                <div class="small text-muted">Hourly production rate</div>
+                <div class="small text-muted">Temperature, weight and fish amount</div>
+                <p> Total fish amount: 9000 pcs</p>
+                <p>Total kg.: 32.000 kg</p>
+                <h3>test</h3>
             </CCol>
             <CCol sm="7" class="d-none d-md-block">
+            
                 <CButton color="primary" class="float-right">
                 <CIcon name="cil-cloud-download"/>
                 </CButton>
@@ -225,23 +235,23 @@
         <CCardFooter>
             <CRow class="text-center">
             <CCol md sm="12" class="mb-sm-2 mb-0">
-                <div class="text-muted">Visits</div>
-                <strong>29.703 Users (40%)</strong>
+                <div class="text-muted">Current harvest speed</div>
+                <strong>250 pr. min</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="success"
-                :value="40"
+                :value="62.5"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
                 <div class="text-muted">Unique</div>
-                <strong>24.093 Users (20%)</strong>
+                <strong>Median harvest speed</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="info"
-                :value="20"
+                :value="62"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0">
@@ -265,8 +275,8 @@
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                <div class="text-muted">Bounce Rate</div>
-                <strong>Average Rate (40.15%)</strong>
+                <div class="text-muted">Total production</div>
+                <strong>56.942 fish</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
@@ -308,23 +318,23 @@
         <CCardFooter>
             <CRow class="text-center">
             <CCol md sm="12" class="mb-sm-2 mb-0">
-                <div class="text-muted">Visits</div>
-                <strong>29.703 Users (40%)</strong>
+                <div class="text-muted">Current harvesting speed</div>
+                <strong>250 pr.min</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="success"
-                :value="40"
+                :value="62.5"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
                 <div class="text-muted">Unique</div>
-                <strong>24.093 Users (20%)</strong>
+                <strong>Median harvest speed</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="info"
-                :value="20"
+                :value="62"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0">
@@ -348,8 +358,8 @@
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                <div class="text-muted">Bounce Rate</div>
-                <strong>Average Rate (40.15%)</strong>
+                <div class="text-muted">Total Production</div>
+                <strong>56.942 fish</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
@@ -391,23 +401,23 @@
         <CCardFooter>
             <CRow class="text-center">
             <CCol md sm="12" class="mb-sm-2 mb-0">
-                <div class="text-muted">Visits</div>
-                <strong>29.703 Users (40%)</strong>
+                <div class="text-muted">Current harvesting speed</div>
+                <strong>250 pr. min</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="success"
-                :value="40"
+                :value="62.5"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
                 <div class="text-muted">Unique</div>
-                <strong>24.093 Users (20%)</strong>
+                <strong>Median harvest speed</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="info"
-                :value="20"
+                :value="62"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0">
@@ -431,8 +441,8 @@
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                <div class="text-muted">Bounce Rate</div>
-                <strong>Average Rate (40.15%)</strong>
+                <div class="text-muted">Total production</div>
+                <strong>56.942 fish</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
@@ -474,23 +484,23 @@
         <CCardFooter>
             <CRow class="text-center">
             <CCol md sm="12" class="mb-sm-2 mb-0">
-                <div class="text-muted">Visits</div>
-                <strong>29.703 Users (40%)</strong>
+                <div class="text-muted">Current harvesting speed</div>
+                <strong>250 pr. min</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="success"
-                :value="40"
+                :value="62.5"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
                 <div class="text-muted">Unique</div>
-                <strong>24.093 Users (20%)</strong>
+                <strong>Median harvest speed</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
                 color="info"
-                :value="20"
+                :value="62"
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0">
@@ -514,8 +524,8 @@
                 />
             </CCol>
             <CCol md sm="12" class="mb-sm-2 mb-0 d-md-down-none">
-                <div class="text-muted">Bounce Rate</div>
-                <strong>Average Rate (40.15%)</strong>
+                <div class="text-muted">Total production</div>
+                <strong>56.942 fish</strong>
                 <CProgress
                 class="progress-xs mt-2"
                 :precision="1"
