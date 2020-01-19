@@ -6,7 +6,7 @@
   >
     <CSidebarBrand 
       :imgFull="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/stranda-logo.png'}"
-      :imgMinimized="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/coreui-signet-white.svg'}"
+      :imgMinimized="{ width: 118, height: 46, alt: 'Logo', src: 'img/brand/stranda-logo.png'}"
       :wrappedInLink="{ href: 'https://stranda.net/', target: '_blank'}"
     />
     <!-- <CSidebarHeader/> -->
