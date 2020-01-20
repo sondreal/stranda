@@ -23,6 +23,10 @@
     />
   </CWidgetProgress>
     <h2>Harvesting data</h2>
+    <div>
+        <p>Harvest data: 150,000 Pcs</p>
+
+    </div>
     <CTabs variant="pills">
         <CTab title="Total" active>
             <CCard>
@@ -204,33 +208,38 @@
             <CCard>
         <CCardBody>
             <CRow>
-            <CCol sm="5">
-                <h4 id="traffic" class="card-title mb-0">Helix 1 Overview</h4>
-                <div class="small text-muted">Temperature, weight and fish amount</div>
-                <p> Total fish amount: 9000 pcs</p>
-                <p>Total kg.: 32.000 kg</p>
-                <h3>test</h3>
-            </CCol>
-            <CCol sm="7" class="d-none d-md-block">
-            
-                <CButton color="primary" class="float-right">
-                <CIcon name="cil-cloud-download"/>
-                </CButton>
-                <CButtonGroup class="float-right mr-3">
-                <CButton
-                    color="outline-secondary"
-                    v-for="(value, key) in ['Day', 'Month', 'Year']"
-                    :key="key"
-                    class="mx-0"
-                    :pressed="value === selected ? true : false"
-                    @click="selected = value"
-                >
-                    {{value}}
-                </CButton>
-                </CButtonGroup>
-            </CCol>
+                <CCol sm="5">
+                    <h4 id="traffic" class="card-title mb-0">Helix 1 Overview</h4>
+                    <div class="small text-muted">Temperature, weight and fish amount</div>
+                    <p> Total fish amount: 9000 pcs</p>
+                    <p>Total kg.: 32.000 kg</p>
+                    <h3>test</h3>
+                </CCol>
+                <CCol sm="7" class="d-none d-md-block">
+                
+                    <CButton color="primary" class="float-right">
+                    <CIcon name="cil-cloud-download"/>
+                    </CButton>
+                    <CButtonGroup class="float-right mr-3">
+                    <CButton
+                        color="outline-secondary"
+                        v-for="(value, key) in ['Day', 'Month', 'Year']"
+                        :key="key"
+                        class="mx-0"
+                        :pressed="value === selected ? true : false"
+                        @click="selected = value"
+                    >
+                        {{value}}
+                    </CButton>
+                    </CButtonGroup>
+                </CCol>
             </CRow>
-            <ProductionExample style="height:300px;margin-top:40px;"/>
+            <CCol>
+                <ProductionExample style="height:300px;margin-top:40px;"/>
+            </CCol>
+            <CCol>
+                <CChartDoughnutExample>
+            </CCol>
         </CCardBody>
         <CCardFooter>
             <CRow class="text-center">
