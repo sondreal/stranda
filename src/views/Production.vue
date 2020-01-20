@@ -29,7 +29,7 @@
             <CCardBody>
                 <CRow>
                 <CCol sm="5">
-                    <h4 id="traffic" class="card-title mb-0">Production overview</h4>
+                    <h4 id="traffic" class="card-title mb-0">Harvesting overview</h4>
                     <div class="small text-muted">Total harvest</div>
                 </CCol>
                 <CCol sm="7" class="d-none d-md-block">
